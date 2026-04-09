@@ -1,0 +1,466 @@
+
+
+
+
+Remote ATtestation ProcedureS                                 G. Bransky
+Internet-Draft                                            Please fill in
+Intended status: Standards Track                             H. Birkholz
+Expires: 11 October 2026                                  Fraunhofer SIT
+                                                            9 April 2026
+
+
+                         Fair Share Cost Token
+                    draft-bransky-scitt-fsct-latest
+
+Abstract
+
+   Software suppliers often use dozens, if not hundreds of open source
+   packages in their products.  To ensure that there is a well-defined
+   supply chain, suppliers often want to create a business relationship
+   with the creators of each of the open source packages.  To enable
+   this, the transaction cost must be very low, which may be supported
+   using a solution based on Supply Chain Integrity, Transparency, and
+   Trust (scitt) tokens.  Specifically, Fair Share Cost Tokens (FSCT)
+   provide some forensic readiness in case there is a dispute about
+   whether the supplier bore their fair share of the cost of keeping the
+   open source product safe and secure.
+
+Status of This Memo
+
+   This Internet-Draft is submitted in full conformance with the
+   provisions of BCP 78 and BCP 79.
+
+   Internet-Drafts are working documents of the Internet Engineering
+   Task Force (IETF).  Note that other groups may also distribute
+   working documents as Internet-Drafts.  The list of current Internet-
+   Drafts is at https://datatracker.ietf.org/drafts/current/.
+
+   Internet-Drafts are draft documents valid for a maximum of six months
+   and may be updated, replaced, or obsoleted by other documents at any
+   time.  It is inappropriate to use Internet-Drafts as reference
+   material or to cite them other than as "work in progress."
+
+   This Internet-Draft will expire on 11 October 2026.
+
+Copyright Notice
+
+   Copyright (c) 2026 IETF Trust and the persons identified as the
+   document authors.  All rights reserved.
+
+   This document is subject to BCP 78 and the IETF Trust's Legal
+   Provisions Relating to IETF Documents (https://trustee.ietf.org/
+   license-info) in effect on the date of publication of this document.
+   Please review these documents carefully, as they describe your rights
+   and restrictions with respect to this document.  Code Components
+   extracted from this document must include Revised BSD License text as
+   described in Section 4.e of the Trust Legal Provisions and are
+   provided without warranty as described in the Revised BSD License.
+
+Table of Contents
+
+   1.  Introduction
+     1.1.  Conventions and Definitions
+   2.  Actors and Objectives
+   3.  Secure Realizations of Process
+   4.  Implementation Status
+     4.1.  (To be added)
+   5.  Privacy Considerations
+   6.  Security Considerations
+   7.  IANA Considerations
+     7.1.  CWT Claim Registrations
+     7.2.  Media Types
+   8.  References
+     8.1.  Normative References
+     8.2.  Informative References
+   Appendix A.  Registering and Using FSCTs
+   Appendix B.  Open Issues
+   Acknowledgments
+   Contributors
+   Authors' Addresses
+
+1.  Introduction
+
+
+   // An intro giving a very high level, informal overview of that FSCTs
+   // do.  This will employ images like this one:
+
+                                            .------------.
+                                            |  Verifier  |
+                                            '------------'
+                                                ^
+                                                | EAT
+                                                | over
+                                                | REST API
+                .------------.              .---|--------.
+                |  Attester  +------------->|--'      RP |
+                '------------' EAT over TLS '------------'
+
+                                  Figure 1
+
+1.1.  Conventions and Definitions
+
+   The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT",
+   "SHOULD", "SHOULD NOT", "RECOMMENDED", "NOT RECOMMENDED", "MAY", and
+   "OPTIONAL" in this document are to be interpreted as described in
+   BCP 14 [RFC2119] [RFC8174] when, and only when, they appear in all
+   capitals, as shown here.
+
+   In this document, CDDL [RFC8610] [RFC9165] [RFC9741] is used to
+   describe the data formats.
+
+   The reader is assumed to be familiar with the vocabulary and concepts
+   defined in [RFC9334].
+
+2.  Actors and Objectives
+
+3.  Secure Realizations of Process
+
+4.  Implementation Status
+
+   This section is to be removed before publishing as an RFC.
+
+
+   // RFC Editor: Please remove the entire section before publication,
+   as well as the reference to RFC 7942.
+
+   This section records the status of known implementations of the
+   protocol defined by this specification at the time of posting of this
+   Internet-Draft, and is based on a proposal described in [RFC7942].
+   The description of implementations in this section is intended to
+   assist the IETF in its decision processes in progressing drafts to
+   RFCs.  Please note that the listing of any individual implementation
+   here does not imply endorsement by the IETF.  Furthermore, no effort
+   has been spent to verify the information presented here that was
+   supplied by IETF contributors.  This is not intended as, and must not
+   be construed to be, a catalog of available implementations or their
+   features.  Readers are advised to note that other implementations may
+   exist.
+
+   According to [RFC7942], "this will allow reviewers and working groups
+   to assign due consideration to documents that have the benefit of
+   running code, which may serve as evidence of valuable experimentation
+   and feedback that have made the implemented protocols more mature.
+   It is up to the individual working groups to use this information as
+   they see fit".
+
+4.1.  (To be added)
+
+5.  Privacy Considerations
+
+
+   // Discuss.
+
+   The privacy considerations outlined in Section 11 of [RFC9334] are
+   fully applicable.  In particular, ...
+
+6.  Security Considerations
+
+   The security considerations discussed in Section 12.2 of [RFC9334]
+   concerning the protection of individual messages are fully
+   applicable.  The following subsections provide further elaboration
+   ...
+
+7.  IANA Considerations
+
+
+   // RFC Editor: Please replace "RFCthis" with the RFC number assigned
+   to this document.
+
+
+   // RFC Editor: This document uses the CPA (code point allocation)
+   convention described in [I-D.bormann-cbor-draft-numbers].  For each
+   usage of the term "CPA", please remove the prefix "CPA" from the
+   indicated value and replace the residue with the value assigned by
+   IANA; perform an analogous substitution for all other occurrences of
+   the prefix "CPA" in the document.  Finally, please remove this note.
+
+7.1.  CWT Claim Registrations
+
+7.2.  Media Types
+
+8.  References
+
+8.1.  Normative References
+
+   [BCP26]    Best Current Practice 26,
+              <https://www.rfc-editor.org/info/bcp26>.
+              At the time of writing, this BCP comprises the following:
+
+              Cotton, M., Leiba, B., and T. Narten, "Guidelines for
+              Writing an IANA Considerations Section in RFCs", BCP 26,
+              RFC 8126, DOI 10.17487/RFC8126, June 2017,
+              <https://www.rfc-editor.org/info/rfc8126>.
+
+   [IANA.cwt] IANA, "CBOR Web Token (CWT) Claims",
+              <https://www.iana.org/assignments/cwt>.
+
+   [IANA.jwt] IANA, "JSON Web Token (JWT)",
+              <https://www.iana.org/assignments/jwt>.
+
+   [RFC2119]  Bradner, S., "Key words for use in RFCs to Indicate
+              Requirement Levels", BCP 14, RFC 2119,
+              DOI 10.17487/RFC2119, March 1997,
+              <https://www.rfc-editor.org/rfc/rfc2119>.
+
+   [RFC3986]  Berners-Lee, T., Fielding, R., and L. Masinter, "Uniform
+              Resource Identifier (URI): Generic Syntax", STD 66,
+              RFC 3986, DOI 10.17487/RFC3986, January 2005,
+              <https://www.rfc-editor.org/rfc/rfc3986>.
+
+   [RFC4648]  Josefsson, S., "The Base16, Base32, and Base64 Data
+              Encodings", RFC 4648, DOI 10.17487/RFC4648, October 2006,
+              <https://www.rfc-editor.org/rfc/rfc4648>.
+
+   [RFC5280]  Cooper, D., Santesson, S., Farrell, S., Boeyen, S.,
+              Housley, R., and W. Polk, "Internet X.509 Public Key
+              Infrastructure Certificate and Certificate Revocation List
+              (CRL) Profile", RFC 5280, DOI 10.17487/RFC5280, May 2008,
+              <https://www.rfc-editor.org/rfc/rfc5280>.
+
+   [RFC5912]  Hoffman, P. and J. Schaad, "New ASN.1 Modules for the
+              Public Key Infrastructure Using X.509 (PKIX)", RFC 5912,
+              DOI 10.17487/RFC5912, June 2010,
+              <https://www.rfc-editor.org/rfc/rfc5912>.
+
+   [RFC6268]  Schaad, J. and S. Turner, "Additional New ASN.1 Modules
+              for the Cryptographic Message Syntax (CMS) and the Public
+              Key Infrastructure Using X.509 (PKIX)", RFC 6268,
+              DOI 10.17487/RFC6268, July 2011,
+              <https://www.rfc-editor.org/rfc/rfc6268>.
+
+   [RFC6838]  Freed, N., Klensin, J., and T. Hansen, "Media Type
+              Specifications and Registration Procedures", BCP 13,
+              RFC 6838, DOI 10.17487/RFC6838, January 2013,
+              <https://www.rfc-editor.org/rfc/rfc6838>.
+
+   [RFC8174]  Leiba, B., "Ambiguity of Uppercase vs Lowercase in RFC
+              2119 Key Words", BCP 14, RFC 8174, DOI 10.17487/RFC8174,
+              May 2017, <https://www.rfc-editor.org/rfc/rfc8174>.
+
+   [RFC8610]  Birkholz, H., Vigano, C., and C. Bormann, "Concise Data
+              Definition Language (CDDL): A Notational Convention to
+              Express Concise Binary Object Representation (CBOR) and
+              JSON Data Structures", RFC 8610, DOI 10.17487/RFC8610,
+              June 2019, <https://www.rfc-editor.org/rfc/rfc8610>.
+
+   [RFC9165]  Bormann, C., "Additional Control Operators for the Concise
+              Data Definition Language (CDDL)", RFC 9165,
+              DOI 10.17487/RFC9165, December 2021,
+              <https://www.rfc-editor.org/rfc/rfc9165>.
+
+   [RFC9277]  Richardson, M. and C. Bormann, "On Stable Storage for
+              Items in Concise Binary Object Representation (CBOR)",
+              RFC 9277, DOI 10.17487/RFC9277, August 2022,
+              <https://www.rfc-editor.org/rfc/rfc9277>.
+
+   [RFC9334]  Birkholz, H., Thaler, D., Richardson, M., Smith, N., and
+              W. Pan, "Remote ATtestation procedureS (RATS)
+              Architecture", RFC 9334, DOI 10.17487/RFC9334, January
+              2023, <https://www.rfc-editor.org/rfc/rfc9334>.
+
+   [RFC9741]  Bormann, C., "Concise Data Definition Language (CDDL):
+              Additional Control Operators for the Conversion and
+              Processing of Text", RFC 9741, DOI 10.17487/RFC9741, March
+              2025, <https://www.rfc-editor.org/rfc/rfc9741>.
+
+   [STD90]    Internet Standard 90,
+              <https://www.rfc-editor.org/info/std90>.
+              At the time of writing, this STD comprises the following:
+
+              Bray, T., Ed., "The JavaScript Object Notation (JSON) Data
+              Interchange Format", STD 90, RFC 8259,
+              DOI 10.17487/RFC8259, December 2017,
+              <https://www.rfc-editor.org/info/rfc8259>.
+
+   [STD94]    Internet Standard 94,
+              <https://www.rfc-editor.org/info/std94>.
+              At the time of writing, this STD comprises the following:
+
+              Bormann, C. and P. Hoffman, "Concise Binary Object
+              Representation (CBOR)", STD 94, RFC 8949,
+              DOI 10.17487/RFC8949, December 2020,
+              <https://www.rfc-editor.org/info/rfc8949>.
+
+   [X.680]    International Telephone and Telegraph Consultative
+              Committee, "Abstract Syntax Notation One (ASN.1):
+              Specification of basic notation", CCITT Recommendation
+              X.680, July 2002.
+
+   [X.690]    International Telephone and Telegraph Consultative
+              Committee, "ASN.1 encoding rules: Specification of basic
+              encoding Rules (BER), Canonical encoding rules (CER) and
+              Distinguished encoding rules (DER)", CCITT Recommendation
+              X.690, July 2002.
+
+8.2.  Informative References
+
+   [DICE-arch]
+              Trusted Computing Group, "DICE Attestation Architecture",
+              January 2024, <https://trustedcomputinggroup.org/wp-
+              content/uploads/DICE-Attestation-Architecture-Version-1.1-
+              Revision-18_pub.pdf>.
+
+   [I-D.bormann-cbor-draft-numbers]
+              Bormann, C., "Managing CBOR codepoints in Internet-
+              Drafts", Work in Progress, Internet-Draft, draft-bormann-
+              cbor-draft-numbers-07, 12 January 2026,
+              <https://datatracker.ietf.org/doc/html/draft-bormann-cbor-
+              draft-numbers-07>.
+
+   [I-D.fossati-seat-expat]
+              Sardar, M. U., Fossati, T., Reddy.K, T., Sheffer, Y.,
+              Tschofenig, H., and I. Mihalcea, "Remote Attestation with
+              Exported Authenticators", Work in Progress, Internet-
+              Draft, draft-fossati-seat-expat-02, 26 February 2026,
+              <https://datatracker.ietf.org/doc/html/draft-fossati-seat-
+              expat-02>.
+
+   [I-D.fossati-tls-attestation]
+              Tschofenig, H., Sheffer, Y., Howard, P., Mihalcea, I.,
+              Deshpande, Y., Niemi, A., and T. Fossati, "Using
+              Attestation in Transport Layer Security (TLS) and Datagram
+              Transport Layer Security (DTLS)", Work in Progress,
+              Internet-Draft, draft-fossati-tls-attestation-09, 30 April
+              2025, <https://datatracker.ietf.org/doc/html/draft-
+              fossati-tls-attestation-09>.
+
+   [I-D.ietf-lamps-csr-attestation]
+              Ounsworth, M., Tschofenig, H., Birkholz, H., Wiseman, M.,
+              and N. Smith, "Use of Remote Attestation with
+              Certification Signing Requests", Work in Progress,
+              Internet-Draft, draft-ietf-lamps-csr-attestation-24, 27
+              March 2026, <https://datatracker.ietf.org/doc/html/draft-
+              ietf-lamps-csr-attestation-24>.
+
+   [I-D.ietf-rats-corim]
+              Birkholz, H., Fossati, T., Deshpande, Y., Smith, N., and
+              W. Pan, "Concise Reference Integrity Manifest", Work in
+              Progress, Internet-Draft, draft-ietf-rats-corim-10, 2
+              March 2026, <https://datatracker.ietf.org/doc/html/draft-
+              ietf-rats-corim-10>.
+
+   [I-D.ietf-rats-ear]
+              Fossati, T., Voit, E., Trofimov, S., and H. Birkholz, "EAT
+              Attestation Results", Work in Progress, Internet-Draft,
+              draft-ietf-rats-ear-03, 15 March 2026,
+              <https://datatracker.ietf.org/doc/html/draft-ietf-rats-
+              ear-03>.
+
+   [RFC3647]  Chokhani, S., Ford, W., Sabett, R., Merrill, C., and S.
+              Wu, "Internet X.509 Public Key Infrastructure Certificate
+              Policy and Certification Practices Framework", RFC 3647,
+              DOI 10.17487/RFC3647, November 2003,
+              <https://www.rfc-editor.org/rfc/rfc3647>.
+
+   [RFC7942]  Sheffer, Y. and A. Farrel, "Improving Awareness of Running
+              Code: The Implementation Status Section", BCP 205,
+              RFC 7942, DOI 10.17487/RFC7942, July 2016,
+              <https://www.rfc-editor.org/rfc/rfc7942>.
+
+   [RFC8792]  Watsen, K., Auerswald, E., Farrel, A., and Q. Wu,
+              "Handling Long Lines in Content of Internet-Drafts and
+              RFCs", RFC 8792, DOI 10.17487/RFC8792, June 2020,
+              <https://www.rfc-editor.org/rfc/rfc8792>.
+
+   [RFC9193]  Keränen, A. and C. Bormann, "Sensor Measurement Lists
+              (SenML) Fields for Indicating Data Value Content-Format",
+              RFC 9193, DOI 10.17487/RFC9193, June 2022,
+              <https://www.rfc-editor.org/rfc/rfc9193>.
+
+   [RFC9711]  Lundblade, L., Mandyam, G., O'Donoghue, J., and C.
+              Wallace, "The Entity Attestation Token (EAT)", RFC 9711,
+              DOI 10.17487/RFC9711, April 2025,
+              <https://www.rfc-editor.org/rfc/rfc9711>.
+
+   [RFC9781]  Birkholz, H., O'Donoghue, J., Cam-Winget, N., and C.
+              Bormann, "A Concise Binary Object Representation (CBOR)
+              Tag for Unprotected CBOR Web Token Claims Sets (UCCS)",
+              RFC 9781, DOI 10.17487/RFC9781, May 2025,
+              <https://www.rfc-editor.org/rfc/rfc9781>.
+
+   [RFC9782]  Lundblade, L., Birkholz, H., and T. Fossati, "Entity
+              Attestation Token (EAT) Media Types", RFC 9782,
+              DOI 10.17487/RFC9782, May 2025,
+              <https://www.rfc-editor.org/rfc/rfc9782>.
+
+   [STD96]    Internet Standard 96,
+              <https://www.rfc-editor.org/info/std96>.
+              At the time of writing, this STD comprises the following:
+
+              Schaad, J., "CBOR Object Signing and Encryption (COSE):
+              Structures and Process", STD 96, RFC 9052,
+              DOI 10.17487/RFC9052, August 2022,
+              <https://www.rfc-editor.org/info/rfc9052>.
+
+              Schaad, J., "CBOR Object Signing and Encryption (COSE):
+              Countersignatures", STD 96, RFC 9338,
+              DOI 10.17487/RFC9338, December 2022,
+              <https://www.rfc-editor.org/info/rfc9338>.
+
+Appendix A.  Registering and Using FSCTs
+
+
+   // Possible appendices with explanatory (non-normative) information,
+   // with more nice figures.
+
+                     .---------------.   .---------.
+                    | Reuse EAT/CoRIM | | Register  |
+                    | media type(s)   | | new media |
+                    | + profile       | | type      |
+                     `---+----+------'   `-+----+--'
+                         |    |            |    |
+                         |  .-+------------+-.  |
+                         | |  |  Register  |  | |
+                       .-(-+-'   new CoAP   `-+-(-.
+                      |  | |  Content-Format  | |  |
+                      |  |  `-------+--------'  |  |
+                      |  |          |           |  |
+                      |  |          v           |  |
+                      |  |   .--------------.   |  |
+                      |  |  | Automatically  |  |  |
+                      |  |  | derive CBOR    |  |  |
+                      |  |  | tag [RFC9277]  |  |  |
+                      |  |   `------+-------'   |  |
+                      |  |          |           |  |
+                      |  |          |           |  |
+                      |  |          |           |  |
+                      |  |          v           |  |
+                      |  |   .----------------. |  |
+                      |  |  /    Tag CMW     /  |  |
+                      v  v `----------------'   v  v
+                  .--------------------------------------.
+                 /             Record CMW               /
+                `--------------------------------------'
+
+                       Figure 2: How To Create a CMW
+
+Appendix B.  Open Issues
+
+   This section is to be removed before publishing as an RFC.
+
+   The list of currently open issues for this document can be found at
+   https://github.com/cabo/fsct/issues.
+
+Acknowledgments
+
+   The authors would like to thank Lots o. Names, We n. to find and
+   Someone Else for their reviews and suggestions.
+
+Contributors
+
+   Carsten Bormann
+
+
+   Carsten supplied some text and helped with the kramdown-rfc
+   mechanics.
+
+Authors' Addresses
+
+   Gregor Bransky
+   Please fill in
+   Email: Please fill in
+
+
+   Henk Birkholz
+   Fraunhofer SIT
+   Email: henk.birkholz@ietf.contact
