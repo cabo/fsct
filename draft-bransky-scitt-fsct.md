@@ -9,7 +9,7 @@ consensus: true
 submissionType: IETF
 
 area: "Security"
-workgroup: "Remote ATtestation ProcedureS"
+workgroup: "Supply Chain Integrity, Transparency, and Trust"
 keyword: [ evidence, attestation results, endorsements, reference values ]
 
 
