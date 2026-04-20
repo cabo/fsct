@@ -73,12 +73,12 @@ entity:
 
 --- abstract
 
-Software suppliers often use dozens, if not hundreds of open source
+Software suppliers often use hundreds, if not thousands of open source
 packages in their products.
 To ensure that there is a well-defined supply chain, suppliers often
-want to create a business relationship with the creators of each of
+want to create a working relationship with the creators of each of
 the open source packages.
-To enable this, the transaction cost must be very low, which may be
+To enable donations, the transaction cost must be very low, which may be
 supported using a solution based on Supply Chain Integrity,
 Transparency, and Trust (scitt) tokens.
 Specifically, Fair Share Cost Tokens (FSCT) provide some forensic
