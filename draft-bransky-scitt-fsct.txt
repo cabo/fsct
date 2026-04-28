@@ -5,8 +5,8 @@
 Supply Chain Integrity, Transparency, and Trust               G. Bransky
 Internet-Draft                                            Please fill in
 Intended status: Standards Track                             H. Birkholz
-Expires: 22 October 2026                                  Fraunhofer SIT
-                                                           20 April 2026
+Expires: 30 October 2026                                  Fraunhofer SIT
+                                                           28 April 2026
 
 
                          Fair Share Cost Token
@@ -53,7 +53,7 @@ Status of This Memo
 
 
 
-Bransky & Birkholz       Expires 22 October 2026                [Page 1]
+Bransky & Birkholz       Expires 30 October 2026                [Page 1]
 
 Internet-Draft            Fair Share Cost Token               April 2026
 
@@ -63,7 +63,7 @@ Internet-Draft            Fair Share Cost Token               April 2026
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 22 October 2026.
+   This Internet-Draft will expire on 30 October 2026.
 
 Copyright Notice
 
@@ -109,7 +109,7 @@ Table of Contents
 
 
 
-Bransky & Birkholz       Expires 22 October 2026                [Page 2]
+Bransky & Birkholz       Expires 30 October 2026                [Page 2]
 
 Internet-Draft            Fair Share Cost Token               April 2026
 
@@ -165,7 +165,7 @@ Internet-Draft            Fair Share Cost Token               April 2026
 
 
 
-Bransky & Birkholz       Expires 22 October 2026                [Page 3]
+Bransky & Birkholz       Expires 30 October 2026                [Page 3]
 
 Internet-Draft            Fair Share Cost Token               April 2026
 
@@ -221,7 +221,7 @@ Internet-Draft            Fair Share Cost Token               April 2026
 
 
 
-Bransky & Birkholz       Expires 22 October 2026                [Page 4]
+Bransky & Birkholz       Expires 30 October 2026                [Page 4]
 
 Internet-Draft            Fair Share Cost Token               April 2026
 
@@ -277,7 +277,7 @@ Internet-Draft            Fair Share Cost Token               April 2026
 
 
 
-Bransky & Birkholz       Expires 22 October 2026                [Page 5]
+Bransky & Birkholz       Expires 30 October 2026                [Page 5]
 
 Internet-Draft            Fair Share Cost Token               April 2026
 
@@ -333,7 +333,7 @@ Internet-Draft            Fair Share Cost Token               April 2026
 
 
 
-Bransky & Birkholz       Expires 22 October 2026                [Page 6]
+Bransky & Birkholz       Expires 30 October 2026                [Page 6]
 
 Internet-Draft            Fair Share Cost Token               April 2026
 
@@ -389,7 +389,7 @@ Internet-Draft            Fair Share Cost Token               April 2026
 
 
 
-Bransky & Birkholz       Expires 22 October 2026                [Page 7]
+Bransky & Birkholz       Expires 30 October 2026                [Page 7]
 
 Internet-Draft            Fair Share Cost Token               April 2026
 
@@ -445,7 +445,7 @@ Internet-Draft            Fair Share Cost Token               April 2026
 
 
 
-Bransky & Birkholz       Expires 22 October 2026                [Page 8]
+Bransky & Birkholz       Expires 30 October 2026                [Page 8]
 
 Internet-Draft            Fair Share Cost Token               April 2026
 
@@ -501,7 +501,7 @@ Appendix A.  Registering and Using FSCTs
 
 
 
-Bransky & Birkholz       Expires 22 October 2026                [Page 9]
+Bransky & Birkholz       Expires 30 October 2026                [Page 9]
 
 Internet-Draft            Fair Share Cost Token               April 2026
 
@@ -557,7 +557,7 @@ Contributors
 
 
 
-Bransky & Birkholz       Expires 22 October 2026               [Page 10]
+Bransky & Birkholz       Expires 30 October 2026               [Page 10]
 
 Internet-Draft            Fair Share Cost Token               April 2026
 
@@ -613,4 +613,4 @@ Authors' Addresses
 
 
 
-Bransky & Birkholz       Expires 22 October 2026               [Page 11]
+Bransky & Birkholz       Expires 30 October 2026               [Page 11]
