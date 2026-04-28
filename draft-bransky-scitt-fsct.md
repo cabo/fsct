@@ -222,6 +222,8 @@ The following subsections provide further elaboration ...
 The list of currently open issues for this document can be found at
 [](https://github.com/cabo/fsct/issues).
 
+{::include-all lists.md}
+
 # Acknowledgments
 {: unnumbered}
 
